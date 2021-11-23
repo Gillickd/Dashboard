@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="custom-style.css" type="text/css"/>
+  <script></script>
+  
+  <title>Time tracking dashboard</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+<main class="items-center py-8 px-0">
+  <div class="container max-w-xs -my-0 mx-auto grid gap-4">
+    <!-- User  Profile Section-->
+    <section class="user grid rounded-lg bg-indigo-900 ">
+      <div class="user-info bg-blue-500 rounded-lg flex flex-wrap gap-px p-4 lg:flex flex-col p-8 ">
+        <img class="user-image w-20 border-2 rounded-full " src="./images/image-jeremy.png" alt="Round Profile Image " />
+        <div class="user-name text-white ">
+          <p class="font-light text-indigo-200">Report for</p>
+          <h1 class="font-normal">Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="user-toggle p-4 flex justify-between cursor-pointer text-indigo-300">
+        <p class="date daily hover:text-white">Daily</p>
+        <p class="date weekly hover:text-white">Weekly</p>
+        <p class="date monthly hover:text-white">Monthly</p>
+      </div>
+    </section>
+
+    <!-- items -->
+    <section class="items grid gap-x-4 xl:grid-cols-3 gap-5">
+      <!--item1--work-->
+      <div class="card cursor-pointer">
+        <header class="item-header bg-yellow-400 relative h-16 rounded-lg">
+          <img class="absolute h-16 w-20 object-contain" src="images\icon-work.svg" alt="Orange Briefcase "/>
+        </header>
+        <div class="item-content rounded-lg px-4 py-8 -mt-4 bg-indigo-900 hover:bg-blue-500">
+          <div class="item-title text-white flex justify-between items-center">
+            <h4>Work</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="item-footer flex justify-between items-center mt-1.5">
+            <p class="hour text-3xl text-white">32 hrs</p>
+            <p class="last pt-4 text-indigo-300">Last Week - 36 hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!--item2-Play-->
+      <div class="card cursor-pointer">
+        <header class="item-header bg-blue-300 relative h-16 rounded-lg">
+          <img class="absolute h-16 w-20 object-contain" src="images\icon-play.svg" alt="Orange Briefcase "/>
+        </header>
+        <div class="item-content rounded-lg px-4 py-8 -mt-4 bg-indigo-900 hover:bg-blue-500">
+          <div class="item-title text-white flex justify-between items-center">
+            <h4>Play</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="item-footer flex justify-between items-center mt-1.5">
+            <p class="hour text-3xl text-white">10 hrs</p>
+            <p class="last pt-4 text-indigo-300">Last Week - 8 hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!--item3-Study-->
+      <div class="card cursor-pointer">
+        <header class="item-header bg-red-400 relative h-16 rounded-lg">
+          <img class="absolute h-16 w-20 object-contain" src="images\icon-study.svg" alt="Orange Briefcase "/>
+        </header>
+        <div class="item-content rounded-lg px-4 py-8 -mt-4 bg-indigo-900 hover:bg-blue-500">
+          <div class="item-title text-white flex justify-between items-center">
+            <h4>Study</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="item-footer flex justify-between items-center mt-1.5">
+            <p class="hour text-3xl text-white">4 hrs</p>
+            <p class="last pt-4 text-indigo-300">Last Week - 7 hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!--item4-Exercise-->
+      <div class="card cursor-pointer">
+        <header class="item-header bg-green-300 relative h-16 rounded-lg">
+          <img class="absolute h-16 w-20 object-contain" src="images\icon-exercise.svg" alt="Orange Briefcase "/>
+        </header>
+        <div class="item-content rounded-lg px-4 py-8 -mt-4 bg-indigo-900 hover:bg-blue-500">
+          <div class="item-title text-white flex justify-between items-center">
+            <h4>Exercise</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="item-footer flex justify-between items-center mt-1.5">
+            <p class="hour text-3xl text-white">4 hrs</p>
+            <p class="last pt-4 text-indigo-300">Last Week - 5 hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!--item5-Social-->
+      <div class="card cursor-pointer">
+        <header class="item-header bg-indigo-400 relative h-16 rounded-lg">
+          <img class="absolute h-16 w-20 object-contain" src="images\icon-social.svg" alt="Orange Briefcase "/>
+        </header>
+        <div class="item-content rounded-lg px-4 py-8 -mt-4 bg-indigo-900 hover:bg-blue-500">
+          <div class="item-title text-white flex justify-between items-center">
+            <h4>Social</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="item-footer flex justify-between items-center mt-1.5">
+            <p class="hour text-3xl text-white">5 hrs</p>
+            <p class="last pt-4 text-indigo-300">Last Week - 10 hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!--item6-Self-Care-->
+      <div class="card cursor-pointer">
+        <header class="item-header bg-yellow-400 relative h-16 rounded-lg">
+          <img class="absolute h-16 w-20 object-contain" src="images\icon-self-care.svg" alt="Orange Briefcase "/>
+        </header>
+        <div class="item-content rounded-lg px-4 py-8 -mt-4 bg-indigo-900 hover:bg-blue-500">
+          <div class="item-title text-white flex justify-between items-center">
+            <h4>Self Care</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="item-footer flex justify-between items-center mt-1.5">
+            <p class="hour text-3xl text-white">2 hrs</p>
+            <p class="last pt-4 text-indigo-300">Last Week - 2 hrs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+      >. Coded by <a href="#">David Gillick</a>.
+    </div>
+  </div>
+</main>
+
+
+</body>
+</html>
